@@ -14,6 +14,17 @@ h2 {
 
 }
 
+.home-text-fadein,
+.section-heading-fadein,
+.fadein-800,
+.fadein-1200,
+.fadein-1600,
+.fadein-2000,
+.fadein-3000
+{
+    opacity:0;
+}
+
 header {
     position: absolute;
     left: 0px;
@@ -64,13 +75,16 @@ section {
 }
 
 .home-area-wrapper {
-    background: url(../img/home/home-background.png) no-repeat center center;
+    background: url(../img/home/home-background2.png) no-repeat center center;
     background-size: cover;
-    /*background-position: right;*/
+    /*background-position: left;*/
 }
 .home-content{
     display: flex;
     align-items: center;
+}
+.content-heading{
+    width: 50%;
 }
 .home-area-wrapper p{
     color: #fff;
@@ -120,6 +134,54 @@ section {
 
 }
 
+
+/*ABOUT US*/
+.about-us-heading{
+    display: flex;
+}
+.about-us-heading img{
+    width: 100%;
+    height: auto;
+
+}
+.about-us-heading h2{
+    position: absolute;
+    align-self: center;
+    margin: auto;
+    right: 0;
+    left: 0;
+    margin: 0;
+    text-align: center;
+}
+.technologies-icons-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.technologies-icons i{
+    font-size: 70px;
+    color: #8EB694;
+
+    -webkit-transition: all 200ms linear 0s;
+    -o-transition: all 200ms linear 0s;
+    transition: all 200ms linear 0s;
+}
+.technologies-icons i:hover{
+    color: #aaa;
+    -webkit-transition: all 200ms linear 0s;
+    -o-transition: all 200ms linear 0s;
+    transition: all 200ms linear 0s;
+}
+.about-us-area-wrapper h3{
+    color: #aaa;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.about-us-area-wrapper p{
+    color: #aaa;
+}
+
+
 /*PORTFOLIO*/
 .portfolio-area-wrapper{
     z-index: 1;
@@ -143,7 +205,7 @@ section {
     height: auto;
 }
 .portfolio-box{
-    border: 1px solid #ccc;
+    box-shadow: 1px 3px 5px 0px #eee;
     position: relative;
     -webkit-transition: all 400ms linear 0s;
     -o-transition: all 400ms linear 0s;
@@ -184,6 +246,11 @@ section {
     transition: all 300ms linear 0s;
 }
 
+.portfolio-site-title{
+    color: #8EB694;
+    padding: 10px 5px;
+    background: #fff;
+}
 
 
 
@@ -269,7 +336,80 @@ section {
     background-position: right center;
 }
 
+
+
 footer{
     background-color: #8EB694;
     color: #fff;
+}
+
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 992px) {
+
+    section {
+        height: unset;
+    }
+    .home-area-wrapper{
+        height: 100vh;
+        background: url(../img/home/home-background-mobile.png) no-repeat center center;
+        background-size: cover;
+        /*background-position: left;*/
+        /*padding: 100px 0px;*/
+    }
+    .home-area-wrapper .content-heading{
+        width: 100%;
+        text-align: center;
+    }
+    .home-area-wrapper .container{
+        position: relative;
+    }
+    .home-content{
+        position: absolute;
+        top: -200px;
+        left: 0px;
+        right: 0px;
+    }
+    .services-area-wrapper, .portfolio-area-wrapper, .contact-area-wrapper{
+        padding: 50px 0px;
+    }
+    .mobile-navigation{
+        z-index: 999;
+        background: rgb(255, 255, 255);
+        position: absolute;
+        top: 79px;
+        width: 100%;
+        left: 0px;
+        border-top: 2px solid rgb(204, 204, 204);
+        border-bottom: 2px solid rgb(204, 204, 204);
+    }
+    .mobile-navigation li{
+        padding: 15px;
+        margin: 0px !important;
+    }
+    .services-box{
+        margin-bottom: 1rem;
+    }
+    .mobile-mt-none{
+        margin-top: 0px !important;
+    }
+    .mobile-px-15{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .portfolio-box{
+        margin-bottom: 20px;
+    }
+    .get-in-touch{
+        margin-top: 3rem;
+    }
+
+
+
+}
+@media only screen and (max-width: 576px) {
+    .home-content h1{
+        font-size: 3rem;
+    }
 }

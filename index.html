@@ -20,7 +20,7 @@
 <!--================Header Menu Area =================-->
 <header>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 ">
 
             <a class="navbar-brand" href="#">GreenFriends</a>
 
@@ -29,7 +29,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse mobile-navigation" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
@@ -58,12 +58,12 @@
     <div class="container">
         <div class="home-content">
             <div class="content-heading">
-                <h1>Lorem ipsum dolor sit amet consectetur</h1>
-                <p>Nulla hendrerit urna</p>
+                <h1 class="home-text-fadein">Lorem ipsum dolor sit amet consectetur</h1>
+                <p class="home-text-fadein">Nulla hendrerit urna</p>
             </div>
-            <div class="content-image">
-                <img src="assets/img/home/home-desktop.png" alt="Home Image">
-            </div>
+            <!--<div class="content-image">-->
+            <!--<img src="assets/img/home/home-desktop2.png" alt="Home Image">-->
+            <!--</div>-->
         </div>
     </div>
 </section>
@@ -72,12 +72,12 @@
 <section class="services-area-wrapper" id="services">
     <div class="container">
         <div class="d-block">
-            <div class="section-heading w-100 text-center mb-5">
+            <div class="section-heading w-100 text-center mb-5 section-heading-fadein">
                 <h2>Services</h2>
                 <img src="assets/img/title-icon2.png" alt="">
             </div>
             <div class="row services-boxes-wrapper">
-                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12  text-center">
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12  text-center fadein-800">
                     <div class="services-box py-5">
                         <i class="devicon-wordpress-plain"></i>
                         <h3 class="my-4">Wordpress</h3>
@@ -86,7 +86,7 @@
                     </div>
 
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12  text-center ">
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12  text-center fadein-1200">
                     <div class="services-box py-5">
                         <img src="assets/img/services/ecommerce.png" alt="E - commerce">
                         <h3 class="my-4">E - commerce</h3>
@@ -95,7 +95,7 @@
                     </div>
 
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12  text-center ">
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12  text-center fadein-1600">
                     <div class="services-box py-5">
                         <img src="assets/img/services/responsive.png" alt="Responsive design">
                         <h3 class="my-4">Responsive Design</h3>
@@ -103,7 +103,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12  text-center ">
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12  text-center fadein-2000">
                     <div class="services-box py-5">
                         <img src="assets/img/services/cms.png" alt="CMS">
                         <h3 class="my-4">CMS</h3>
@@ -116,79 +116,141 @@
     </div>
 </section>
 
+<section class="about-us-area-wrapper" id="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 about-us-heading section-heading-fadein">
+                <h2>About us</h2>
+                <img src="assets/img/about-us/about-us-bg.png" alt="">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div class="fadein-2000">
+                    <p><strong>WHO WE ARE</strong> Morbi non tellus vitae urna congue pharetra. Proin rhoncus erat
+                        tortor,
+                        nec bibendum leo pulvinar ultrices. Nullam nisl ipsum, mollis in orci at, rutrum congue ipsum.
+                        Aenean sollicitudin dui fringilla.</p>
+                    <p><strong>OUR MISSION</strong> Morbi non tellus vitae urna congue pharetra. Proin rhoncus erat
+                        tortor,
+                        nec bibendum leo pulvinar ultrices. Nullam nisl ipsum, mollis in orci at, rutrum congue ipsum.
+                        Aenean sollicitudin dui fringilla.</p>
+                    <p><strong>OUR VISSION</strong> Morbi non tellus vitae urna congue pharetra. Proin rhoncus erat
+                        tortor,
+                        nec bibendum leo pulvinar ultrices. Nullam nisl ipsum, mollis in orci at, rutrum congue ipsum.
+                        Aenean sollicitudin dui fringilla.</p>
+                </div>
+
+                <h3 class="my-4 fadein-3000">Technologies We Use</h3>
+                <div class="technologies-icons-wrapper fadein-3000">
+                    <div class="technologies-icons d-flex justify-content-between mb-3">
+                        <i class="devicon-php-plain"></i>
+                        <i class="devicon-wordpress-plain-wordmark"></i>
+                        <i class="devicon-mysql-plain-wordmark"></i>
+                        <i class="devicon-html5-plain-wordmark"></i>
+                        <i class="devicon-css3-plain-wordmark"></i>
+                    </div>
+                    <div class="technologies-icons d-flex justify-content-between mb-3">
+                        <i class="devicon-javascript-plain"></i>
+                        <i class="devicon-bootstrap-plain-wordmark"></i>
+                        <i class="devicon-nginx-original"></i>
+                        <i class="devicon-github-plain-wordmark"></i>
+                        <i class="devicon-bitbucket-plain"></i>
+                    </div>
+                    <div class="technologies-icons d-flex justify-content-between">
+                        <i class="devicon-linux-plain"></i>
+                        <i class="devicon-jquery-plain-wordmark"></i>
+                        <i class="devicon-oracle-original"></i>
+                        <i class="devicon-redis-plain-wordmark"></i>
+                        <i class="devicon-ubuntu-plain"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+
 <section class="portfolio-area-wrapper" id="portfolio">
     <div class="container">
         <div class="d-block">
-            <div class="section-heading w-100 text-center mb-5">
+            <div class="section-heading w-100 text-center mb-5 section-heading-fadein">
                 <h2>Portfolio</h2>
                 <img src="assets/img/title-icon2.png" alt="">
             </div>
             <div class="row services-boxes-wrapper">
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center fadein-800">
                     <div class="portfolio-box ">
                         <a href="https://nonstopshop.rs/" title="NonStopShop">
                             <img src="assets/img/portfolio/1.jpg" alt="NonStopShop.rs">
                             <div class="portfolio-hidden-text"><p class="m-0">NonStopShop.rs</p></div>
+                            <div class="portfolio-site-title">NonStopShop.rs</div>
                         </a>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center fadein-1200">
                     <div class="portfolio-box">
                         <a href="http://hronokuhinja.rs/" title="Hrono Kuhinja">
                             <img src="assets/img/portfolio/2.jpg" alt="hronokuhinja.rs">
                             <div class="portfolio-hidden-text"><p class="m-0">hronokuhinja.rs</p></div>
-
+                            <div class="portfolio-site-title">hronokuhinja.rs</div>
                         </a>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center fadein-1600">
                     <div class="portfolio-box ">
                         <a href="http://zelenitalas.com/" title="Auto Skola Zeleni Talas">
                             <img src="assets/img/portfolio/3.jpg" alt="zelenitalas.com">
                             <div class="portfolio-hidden-text"><p class="m-0">zelenitalas.com</p></div>
+                            <div class="portfolio-site-title">zelenitalas.com</div>
                         </a>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center fadein-2000">
                     <div class="portfolio-box ">
                         <a href="http://fenikstradervp.com/" title="Fenikstrade RVP International">
                             <img src="assets/img/portfolio/4.jpg" alt="fenikstradervp.com">
                             <div class="portfolio-hidden-text"><p class="m-0">fenikstradervp.com</p></div>
+                            <div class="portfolio-site-title">fenikstradervp.com</div>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="row services-boxes-wrapper mt-5">
 
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center">
+            <div class="row mt-5  services-boxes-wrapper mobile-mt-none">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center fadein-2000">
                     <div class="portfolio-box ">
                         <a href="https://cfp.phpsrbija.rs/" title="CFP - PHP Serbia Conference 2019">
                             <img src="assets/img/portfolio/5.jpg" alt="cfp.phpsrbija.rs">
                             <div class="portfolio-hidden-text"><p class="m-0">cfp.phpsrbija.rs</p></div>
+                            <div class="portfolio-site-title">cfp.phpsrbija.rs</div>
                         </a>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center fadein-1600">
                     <div class="portfolio-box 3">
                         <a href="https://conf2018.phpsrbija.rs/" title="PHP Serbia Conference 2018">
                             <img src="assets/img/portfolio/6.jpg" alt="conf2018.phpsrbija.rs">
                             <div class="portfolio-hidden-text"><p class="m-0">conf2018.phpsrbija.rs</p></div>
+                            <div class="portfolio-site-title">conf2018.phpsrbija.rs</div>
                         </a>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center fadein-1200">
                     <div class="portfolio-box ">
                         <a href="http://plumasdetigre.com/" title="Nuria Navas">
                             <img src="assets/img/portfolio/7.jpg" alt="plumasdetigre.com">
                             <div class="portfolio-hidden-text"><p class="m-0">plumasdetigre.com</p></div>
+                            <div class="portfolio-site-title">plumasdetigre.com</div>
                         </a>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6  text-center fadein-800">
                     <div class="portfolio-box ">
                         <a href="rajalrakija.com" title="Rajal Rakija">
                             <img src="assets/img/portfolio/8.jpg" alt="rajalrakija.com">
                             <div class="portfolio-hidden-text"><p class="m-0">rajalrakija.com</p></div>
+                            <div class="portfolio-site-title">rajalrakija.com</div>
 
                         </a>
                     </div>
@@ -202,12 +264,12 @@
 <section class="contact-area-wrapper" id="contact">
     <div class="container">
         <div class="d-block">
-            <div class="section-heading w-100 text-center mb-5">
+            <div class="section-heading w-100 text-center mb-5 section-heading-fadein">
                 <h2>Contact</h2>
                 <img src="assets/img/title-icon2.png" alt="">
             </div>
             <div class="row contact-content">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pr-5">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pr-5 mobile-px-15 fadein-1200">
                     <h3>Send us a message</h3>
                     <form class="mt-5">
                         <div class="form-row">
@@ -228,7 +290,7 @@
                         <button type="submit" class="btn btn-primary send-btn">SEND</button>
                     </form>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pl-5">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pl-5 mobile-px-15 get-in-touch fadein-1200">
                     <h3>Get in touch, lorem ispum dolor</h3>
                     <div class="contact-icons-wrapper mt-5">
                         <div class="mb-5 d-flex">
