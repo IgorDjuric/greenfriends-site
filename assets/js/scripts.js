@@ -156,4 +156,11 @@ $(document).ready(function () {
     });
 
     $('.home-text-fadein').animate({'opacity':'1'},1000);
+
+
+
+});
+
+$(window).on('load', function(){
+    $('.loader').fadeOut("slow");
 });
